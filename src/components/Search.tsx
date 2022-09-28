@@ -17,8 +17,10 @@ const Search = ({handleSearch}: {handleSearch: (e: FormEvent<HTMLFormElement>, C
     <form id="form" onSubmit={(e) => {
         handleSearch(e, searchBox) 
         setSearchBox('')
-        }}>
+        }}> 
+        
       <label htmlFor="search"></label>
+      <br /> <br />
       <input
         autoComplete="off"
         id="search"
@@ -27,9 +29,7 @@ const Search = ({handleSearch}: {handleSearch: (e: FormEvent<HTMLFormElement>, C
         placeholder="Buscar ubicación"
         className="absolute w-72 h-8 rounded-full mt-12"
         onChange={handleChanges}
-        ref={inputRef}
-      />
-      <br /><br />
+        ref={inputRef}/>
     </form>
     
     
