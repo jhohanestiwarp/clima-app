@@ -29,7 +29,10 @@ const Search = ({handleSearch}: {handleSearch: (e: FormEvent<HTMLFormElement>, C
         onChange={handleChanges}
         ref={inputRef}
       />
+      <br /><br />
     </form>
+    
+    
   );
 };
 
